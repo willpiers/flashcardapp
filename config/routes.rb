@@ -1,8 +1,11 @@
 Flashcard::Application.routes.draw do
 
+  resources :groups
+
+
   get "welcome/index"
 
-  root to: 'welcome#index'
+  root to: 'welcome#index', as: 'root'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

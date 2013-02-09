@@ -1,2 +1,16 @@
 <h1>Flashcard</h1>
-<p>Making it easier to remember names since 2013</p>
+<p>Making memories better since 2013</p>
+
+
+<%= form_tag root_url do %>
+	<%= label_tag :username %> <br>
+	<%= text_field_tag :username %>
+	<br>
+	<%= label_tag :password %> <br>
+	<%= text_field_tag :password %>
+	<br>
+	<%= submit_tag "Sign In" %>
+<% end %>
+<br><br><br>
+
+<%= link_to "Groups", groups_url %>
