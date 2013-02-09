@@ -18,5 +18,10 @@ h1 {
 	background-image:url('/app/assets/images/logo1.jpg');
 }
 h1:hover {
+<<<<<<< HEAD
 	background-image:url('/app/assets/images/logo2.jpg');
 }
+=======
+	background-image:url('app/assets/images/logo2.jpg');
+}
+>>>>>>> 9de624f3cafa1af4aec839862ec2a4b803b962a8
