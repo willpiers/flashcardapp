@@ -1,12 +1,12 @@
 <h1>Listing groups</h1>
 
-
+<ul>
 <% @groups.each do |group| %>
-  <div>
-    <p><%= group.name %></p>
-    <p><%= image_tag "#{group.photo_url}", width: 80 %></p>
+  <li>
+    <h4><%= group.name %></h4>
+    <div><%= image_tag "#{group.photo_url}", width: 80 %></div>
     <p><%= link_to 'Show', group %> | <%= link_to 'Edit', edit_group_path(group) %> | <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-  </div>
+  </li>
 <% end %>
 <br />
 

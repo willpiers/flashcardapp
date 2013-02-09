@@ -1,5 +1,8 @@
 Flashcard::Application.routes.draw do
 
+  resources :people
+
+
   resources :groups
 
 
