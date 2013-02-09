@@ -15,5 +15,8 @@
  /*Main colors of the logo #FF4C00 & #00AE68*/
 
 h1 {
-	color: #FF4C00;
+	background-image:url('logo1.jpg');
+}
+h1:hover {
+	background-image:url('logo2.jpg');
 }
