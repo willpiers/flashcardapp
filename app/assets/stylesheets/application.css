@@ -13,15 +13,22 @@
  */
 
  /*Main colors of the logo #FF4C00 & #00AE68*/
+html {
 
-h1 {
-	background-image:url('/app/assets/images/logo1.jpg');
 }
-h1:hover {
-<<<<<<< HEAD
-	background-image:url('/app/assets/images/logo2.jpg');
+body {
+	background-color: #C8C1BA;
+	background-size: cover;
+	max-width: 960px;
+	margin: 20px;
 }
-=======
-	background-image:url('app/assets/images/logo2.jpg');
+form {
+	background-color: #899290;
 }
->>>>>>> 9de624f3cafa1af4aec839862ec2a4b803b962a8
+label {
+	position: relative;
+}
+input {
+	border-radius: 5px;
+	position: relative;
+}
