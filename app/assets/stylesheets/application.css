@@ -12,6 +12,8 @@
  *= require_tree .
  */
 
+ /*Main colors of the logo #FF4C00 & #00AE68*/
+
 h1 {
 	color: red;
 }
