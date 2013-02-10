@@ -8,9 +8,11 @@
 </head>
 <body>
 
-<%= link_to image_tag('/app/assets/images/logo1.jpg'), root_url %>
+<%= link_to image_tag('logo1.jpg', width: 500), root_url %>
+<br>
 <%= link_to "People", people_url %>
 <%= link_to "Groups", groups_url %>
+<%= link_to "Memberships", memberships_url %>
 
 <%= yield %>
 
