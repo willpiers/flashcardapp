@@ -13,14 +13,49 @@
  */
 
  /*Main colors of the logo #FF4C00 & #00AE68*/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c17c5f81effe7a9ba380c8a0f8761b76ff7c092
 body {
-	background-color: white;
-	max-width: 960px;
-	margin: 20px;
+	font-family: "Ubuntu", Sans-serif;
+	color: black;
+	background: #f8f8f8;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.content {
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+}
+.group_info {
+	width: 600px;
+	margin: 0 auto;
+}
+.nav {
+	text-align: center;
+	margin: 0 auto;
 }
 form {
-	background-color: #899290;
+	background-color: #f8f8f8;
+}
+a {
+	color: black;
+	text-decoration: none;
+	text-transform: none;
+}
+a:hover {
+	text-decoration: none;
+	text-transform: none;
+	color: #ff4c00;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
 }
 label {
 	position: relative;
@@ -28,4 +63,13 @@ label {
 input {
 	border-radius: 5px;
 	position: relative;
+<<<<<<< HEAD
 }
+=======
+}
+img.profile_pic {
+	border-radius: 100px;
+}
+
+
+>>>>>>> 0c17c5f81effe7a9ba380c8a0f8761b76ff7c092

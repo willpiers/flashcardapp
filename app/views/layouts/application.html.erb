@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Flashcard</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,18 +11,20 @@
 </head>
 <body>
 
-<%= link_to image_tag('logo1.jpg', width: 500), root_url %>
-<br>
-<<<<<<< HEAD
-<img src="/app/assets/images/logo1.jpg" onmouseover="this.src='/app/assets/images/logo2.jpg'" onmouseout="this.src='/app/assets/images/logo1.jpg">
-=======
->>>>>>> e7d29729fb874ea4d51c929cba95ddc8b21bd6f8
+<div class="container">
+	<div class="content">
+	<div class="nav">
+		<%= link_to image_tag('logo1.png', width: 500, :mouseover => 'logo2.png'), root_url, :id => 'logo' %>
+		<br><br>
 
-<%= link_to "People", people_url %>
-<%= link_to "Groups", groups_url %>
-<%= link_to "Memberships", memberships_url %>
 
-<%= yield %>
+		<%= link_to "People", people_url %>&nbsp;&nbsp;&nbsp;
+		<%= link_to "Groups", groups_url %>&nbsp;&nbsp;&nbsp;
+		<%= link_to "Memberships", memberships_url %>
+	</div>
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>
