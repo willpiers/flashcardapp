@@ -6,20 +6,20 @@
 section {
 	margin: 0;
 	padding: 0;
-	background: green;
-	width: 960px;
+	background: transparent;
+	width: 760px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
 .block {
-	background: purple;
+	background: #00ae68;
 	width: 180px;
-	height: 200px;
-	border-right: 5px solid black;
+	height: 250px;
 	margin: 15px;
-	padding: 10px;
+	padding: 0px 10px 10px 10px;
 	float: left;
+	border-radius: 10px;
 }
 
 .clear {
