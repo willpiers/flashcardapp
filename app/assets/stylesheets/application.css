@@ -14,12 +14,24 @@
 
  /*Main colors of the logo #FF4C00 & #00AE68*/
 html {
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+h1 {
+	background-image:url(app/assets/images/logo1.jpg);
+}
+h1:hover {
+	background-image:url(app/assets/images/logo2.jpg);
+=======
+>>>>>>> 208d910546a5aa9901969eecc89f6ecca2943b45
 }
 body {
 	background-color: #C8C1BA;
 	background-size: cover;
 	max-width: 960px;
 	margin: 20px;
+>>>>>>> c7bb054e7048fcc892d0f640fc0ba81926c783fb
 }
 form {
 	background-color: #899290;

@@ -1,8 +1,8 @@
 Flashcard::Application.routes.draw do
 
+  get "/memberships", controller: "memberships", action: "index", as: "memberships"
+  resources :memberships
   resources :people
-
-
   resources :groups
 
 

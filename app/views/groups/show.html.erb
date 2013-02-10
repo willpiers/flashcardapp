@@ -6,3 +6,17 @@
 <br><br>
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>
+
+
+<p>
+	<strong>Students:</strong>
+	<% @group.people.each do |person| %>
+		<p><%= person.name %> : @<%= person.twitter %></p>
+	<% end %>
+</p>
+<!-- <section class="group">
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</section> -->

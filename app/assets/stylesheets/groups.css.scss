@@ -1,3 +1,39 @@
 // Place all the styles related to the groups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+section {
+	margin: 0;
+	padding: 0;
+	background: green;
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.block {
+	background: purple;
+	width: 180px;
+	height: 200px;
+	border-right: 5px solid black;
+	margin: 15px;
+	padding: 10px;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
