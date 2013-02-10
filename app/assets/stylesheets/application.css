@@ -33,6 +33,7 @@ body {
 	margin: 0 auto;
 }
 .nav {
+	font-size: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -63,5 +64,6 @@ input {
 img.profile_pic {
 	border-radius: 100px;
 }
-
-
+p.quote {
+	text-align: center;
+}
