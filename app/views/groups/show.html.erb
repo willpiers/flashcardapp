@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<div class"group_info">
 <h1><%= @group.name %></h1>
-<%= image_tag "#{@group.photo_url}" %>
+<%= image_tag "#{@group.photo_url}", width: 100 %>
 
 <br><br>
 <%= link_to 'Edit', edit_group_path(@group) %> |
@@ -10,13 +10,18 @@
 
 <p>
 	<strong>Students:</strong>
+   <section class="group">
 	<% @group.people.each do |person| %>
-		<p><%= person.name %> : @<%= person.twitter %></p>
+		<div class="block">
+			<p>
+				<%= image_tag person.photo_url, width: 175, :class => 'profile_pic' %>
+			</p>
+			<p class="info"><%= person.name %><br>
+				<%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}" %>
+			</p>
+		</div>
+
 	<% end %>
+	</section>
 </p>
-<!-- <section class="group">
-	<div class="block"></div>
-	<div class="block"></div>
-	<div class="block"></div>
-	<div class="block"></div>
-</section> -->
+</div>
