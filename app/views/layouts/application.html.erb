@@ -5,11 +5,19 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
 
+<<<<<<< HEAD
 <%= link_to image_tag('logo1.jpg', width: 500), root_url %>
 <br>
+=======
+<img src="/app/assets/images/logo1.jpg" onmouseover="this.src='/app/assets/images/logo2.jpg'" onmouseout="this.src='/app/assets/images/logo1.jpg">
+
+<%= link_to image_tag('/app/assets/images/logo1.jpg'), root_url %>
+>>>>>>> c7bb054e7048fcc892d0f640fc0ba81926c783fb
 <%= link_to "People", people_url %>
 <%= link_to "Groups", groups_url %>
 <%= link_to "Memberships", memberships_url %>
