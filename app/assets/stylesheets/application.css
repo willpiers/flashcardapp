@@ -13,10 +13,6 @@
  */
 
  /*Main colors of the logo #FF4C00 & #00AE68*/
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c17c5f81effe7a9ba380c8a0f8761b76ff7c092
 body {
 	font-family: "Ubuntu", Sans-serif;
 	color: black;
@@ -37,6 +33,7 @@ body {
 	margin: 0 auto;
 }
 .nav {
+	font-size: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -63,13 +60,10 @@ label {
 input {
 	border-radius: 5px;
 	position: relative;
-<<<<<<< HEAD
-}
-=======
 }
 img.profile_pic {
 	border-radius: 100px;
 }
-
-
->>>>>>> 0c17c5f81effe7a9ba380c8a0f8761b76ff7c092
+p.quote {
+	text-align: center;
+}
