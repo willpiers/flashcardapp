@@ -8,7 +8,7 @@
 
 
 groups = [
-  { :name => "The Dark Knight", :photo_url => "http://www.starterleague.com/assets/logo.png" },
+  { :name => "Starter League Design", :photo_url => "http://www.starterleague.com/assets/logo.png" },
 ]
 
 Group.destroy_all

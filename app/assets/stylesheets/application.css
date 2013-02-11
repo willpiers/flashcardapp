@@ -67,3 +67,9 @@ img.profile_pic {
 p.quote {
 	text-align: center;
 }
+#notice {
+	color: green;
+}
+div#error_explanation {
+	color: red;
+}
