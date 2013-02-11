@@ -1,7 +1,7 @@
 Flashcard::Application.routes.draw do
 
   get "/memberships", controller: "memberships", action: "index", as: "memberships"
-  resources :memberships
+  resources :memberships, except: :show
   resources :people
   resources :groups
 

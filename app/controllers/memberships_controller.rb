@@ -1,6 +1,7 @@
 class MembershipsController < ApplicationController
 	def index
     @memberships = Membership.all
+    @people = Person.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -8,14 +9,14 @@ class MembershipsController < ApplicationController
     end
   end
 
-  def show
-    @membership = Membership.find(params[:id])
+  # def show
+  #   @membership = Membership.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @membership }
-    end
-  end
+  #   respond_to do |format|
+  #     format.html # show.html.erb
+  #     format.json { render json: @membership }
+  #   end
+  # end
 
   def new
     @membership = Membership.new
@@ -35,7 +36,7 @@ class MembershipsController < ApplicationController
 
     respond_to do |format|
       if @membership.save
-        format.html { redirect_to memberships_url, notice: 'Membership was successfully created.' }
+        format.html { redirect_to group_url(@membership.group_id), notice: 'Membership was successfully created.' }
         format.json { render json: memberships_url, status: :created, location: @person }
       else
         format.html { render action: "new" }
