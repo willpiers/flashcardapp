@@ -48,9 +48,9 @@ people.each do |person_hash|
   name_pieces = d.name.split(' ')
   url_name_string = ""
   name_pieces.each do |piece|
-  	url_name_string << piece
+  	url_name_string << "#{piece.downcase}-"
   end
-  d.photo_url = "http://portal.starterleague.com/assets/" + url_name_string + ".jpg"
+  d.photo_url = "http://portal.starterleague.com/assets/" + url_name_string[0..-2] + ".jpg"
   d.save
 
   m = Membership.new
