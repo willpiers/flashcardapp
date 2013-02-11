@@ -46,7 +46,7 @@ people.each do |person_hash|
   d.twitter = person_hash[:twitter]
   d.photo_url = person_hash[:photo_url]
   name_pieces = d.name.split(' ')
-  url_name_string
+  url_name_string = ""
   name_pieces.each do |piece|
   	url_name_string << piece
   end
