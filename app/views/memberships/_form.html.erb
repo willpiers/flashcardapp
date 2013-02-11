@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :person_id %>
-    <%= f.collection_select :person_id, Person.all, :id, :name %>
+    <%= f.label :person_id %><br>
+    <%= f.collection_select :person_id, Person.all, :id, :name %><br>
   </div>
   <div class="field">
     <%= f.label :group_id %>
