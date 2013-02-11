@@ -20,22 +20,22 @@ groups.each do |group_hash|
 end
 
 people = [
-  { name: "Pedro Carmo", twitter: "drocarmo", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Akiwumi Attawia", twitter: "aattawia", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Alexis Finch", twitter: "agentfin", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Andrew Kelly", twitter: "kellyajkelly", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Anticio Duke", twitter: "onlyaduke", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Benjamin Millstein", twitter: "benmillstein", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Bryan Sebastian", twitter: "bjsebastian", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Caity Moran", twitter: "caitymoran", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Christopher Lindsey", twitter: "ChrisEar2Ground", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Damien Delabesse", twitter: "", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Dan Manges", twitter: "dan_manges", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Elizabeth Park", twitter: "", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Golnaz (Golli) Hashemian", twitter: "golgolli", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Jim Turner", twitter: "_jeturner", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Julia Fedor", twitter: "juliafedor", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" },
-  { name: "Kai Yao", twitter: "ohkaiby", photo_url: "http://www.prguitarman.com/comics/poptart1red1.gif" }
+  { name: "Pedro Carmo", twitter: "drocarmo" },
+  { name: "Akiwumi Attawia", twitter: "aattawia" },
+  { name: "Alexis Finch", twitter: "agentfin" },
+  { name: "Andrew Kelly", twitter: "kellyajkelly" },
+  { name: "Anticio Duke", twitter: "onlyaduke" },
+  { name: "Benjamin Millstein", twitter: "benmillstein" },
+  { name: "Bryan Sebastian", twitter: "bjsebastian" },
+  { name: "Caity Moran", twitter: "caitymoran" },
+  { name: "Christopher Lindsey", twitter: "ChrisEar2Ground" },
+  { name: "Damien Delabesse", twitter: "" },
+  { name: "Dan Manges", twitter: "dan_manges" },
+  { name: "Elizabeth Park", twitter: "" },
+  { name: "Golnaz (Golli) Hashemian", twitter: "golgolli" },
+  { name: "Jim Turner", twitter: "_jeturner" },
+  { name: "Julia Fedor", twitter: "juliafedor" },
+  { name: "Kai Yao", twitter: "ohkaiby" }
 ]
 
 Person.destroy_all
@@ -45,6 +45,12 @@ people.each do |person_hash|
   d.name = person_hash[:name]
   d.twitter = person_hash[:twitter]
   d.photo_url = person_hash[:photo_url]
+  name_pieces = d.name.split(' ')
+  url_name_string
+  name_pieces.each do |piece|
+  	url_name_string << piece
+  end
+  d.photo_url = "http://portal.starterleague.com/assets/" + url_name_string + ".jpg"
   d.save
 
   m = Membership.new
