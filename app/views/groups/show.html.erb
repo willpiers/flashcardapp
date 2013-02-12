@@ -28,7 +28,8 @@
 				<p>
 					<%= image_tag person.photo_url, width: 175, :class => 'profile_pic' %>
 				</p>
-				<p class="info"><%= person.name %><br>
+				<p class="info">
+					<%= link_to person.name, person %><br>
 					<% if person.twitter.present? %>
 					<%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}" %>
 					<% end %>

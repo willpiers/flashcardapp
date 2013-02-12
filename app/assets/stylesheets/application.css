@@ -70,6 +70,6 @@ p.quote {
 #notice {
 	color: green;
 }
-div#error_explanation {
+#error_explanation {
 	color: red;
 }

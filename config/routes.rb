@@ -1,14 +1,11 @@
 Flashcard::Application.routes.draw do
 
-  get "/memberships", controller: "memberships", action: "index", as: "memberships"
-  resources :memberships, except: :show
+  root to: 'welcome#index', as: 'root'
+
+  resources :memberships, only: [:create, :destroy]
   resources :people
   resources :groups
 
-
-  get "welcome/index"
-
-  root to: 'welcome#index', as: 'root'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
