@@ -18,15 +18,9 @@
 		<br><br>
 		<%= link_to "People", people_url %>&nbsp;&nbsp;&nbsp;
 		<%= link_to "Groups", groups_url %>&nbsp;&nbsp;&nbsp;
-		<%= link_to "Demo Group", group_url(Group.first) %>
+		<%= link_to "Demo", group_url(Group.first) %>
 	</div>
 	<br>
-	<% if flash[:alert] %>
-		<p style="color:red;"><%= flash[:alert] %></p>
-   <% end %>
-   <% if flash[:notice] %>
-   	<p style="color:red;"><%= flash[:notice] %></p>
-   <% end %>
 
 	<%= yield %>
 	<p style="border-top: 1px solid #ccc; margin-top: 45px; padding-top: 5px;">This <%= link_to "Rails app", "https://github.com/willpiers/flashcardapp" %> was created by <%= link_to "Pedro Carmo", "https://twitter.com/drocarmo" %> and <%= link_to "Will Piers", "https://twitter.com/willpiers" %></p>
