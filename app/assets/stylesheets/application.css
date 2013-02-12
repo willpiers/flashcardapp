@@ -88,6 +88,10 @@ p.quote {
 #error_explanation {
 	color: red;
 }
+img#logo {
+    width: 574px;
+    height: 92px;
+}
 
 /*Animation*/
 
@@ -139,18 +143,22 @@ p.quote {
 
 @media only screen and (min-width : 320px) and (max-width : 400px) {
     .content {
-    width: 380px;
+    width: 350px;
     height: 100%;
     margin: 0 auto;
     }
     .group_info {
-    width: 350px;
+    width: 320px;
     margin: 0 auto;
     }
     .nav a {
     font-size: 20px;
-    padding-right: 10px;
-}
+    padding-right: 7px;
+    }
+    img#logo {
+    width: 320px;
+    height: 55px;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
