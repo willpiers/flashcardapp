@@ -45,7 +45,7 @@ class GroupsController < ApplicationController
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to @group, notice: 'Group was successfully created.' }
+        format.html { redirect_to @group, notice: "The group #{@group.name} was successfully created." }
         format.json { render json: @group, status: :created, location: @group }
       else
         format.html { render action: "new" }
@@ -61,7 +61,7 @@ class GroupsController < ApplicationController
 
     respond_to do |format|
       if @group.update_attributes(params[:group])
-        format.html { redirect_to @group, notice: 'Group was successfully updated.' }
+        format.html { redirect_to @group, notice: "The group #{@group.name} was successfully updated." }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -77,7 +77,7 @@ class GroupsController < ApplicationController
     @group.destroy
 
     respond_to do |format|
-      format.html { redirect_to groups_url }
+      format.html { redirect_to groups_url, notice: "The group '#{@group.name}' was successfully destroyed." }
       format.json { head :no_content }
     end
   end
