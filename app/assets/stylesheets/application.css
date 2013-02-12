@@ -143,12 +143,12 @@ p.quote {
 
 @media only screen and (min-width : 320px) and (max-width : 400px) {
     .content {
-    width: 320px;
+    width: 310px;
     height: 100%;
     margin: 0 auto;
     }
     .group_info {
-    width: 300px;
+    width: 290px;
     margin: 0 auto;
     }
     .nav a {
@@ -156,8 +156,8 @@ p.quote {
     padding-right: 7px;
     }
     .fadeIn img {
-    width: 320px;
-    height: 80px;
+    width: 300px;
+    height: 48px;
     }
 }
 
