@@ -13,6 +13,9 @@
  */
 
  /*Main colors of the logo #FF4C00 & #00AE68*/
+
+/*Content*/
+
 body {
 	font-family: "Ubuntu", Sans-serif;
 	color: black;
@@ -72,4 +75,122 @@ p.quote {
 }
 #error_explanation {
 	color: red;
+}
+
+/*Animation*/
+
+.animated {
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0px);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+    }
+}
+
+@-moz-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(0px);
+    }
+    
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(-30px);
+    }
+}
+
+@-ms-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -ms-transform: translateY(0px);
+    }
+    
+    100% {
+        opacity: 1;
+        -ms-transform: translateY(-30px);
+    }
+}
+
+@-o-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0px);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-30px);
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+}
+
+.fadeUp {
+    -webkit-animation-name: fadeUp;
+    -moz-animation-name: fadeUp;
+    -ms-animation-name: fadeUp;
+    animation-name: fadeUp;
+    -webkit-animation-duration: 2.5s;
+       -moz-animation-duration: 2.5s;
+        -ms-animation-duration: 2.5s;
+            animation-duration: 2.5s;
 }

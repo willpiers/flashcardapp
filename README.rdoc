@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is a StarterLeague project by myself and Pedro Carmo.
+=======
+This is a StarterLeague project by myself and Will Piers.
+>>>>>>> 66052128b67226ad9435c0a25715de35741f7aaf
 This app was built in one weekend, with a lot of bumps and bruises along the way.
 
 Check it out live:
