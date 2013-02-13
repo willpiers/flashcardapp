@@ -19,7 +19,7 @@
 body {
 	font-family: "Ubuntu", Sans-serif;
 	color: black;
-	background: #f8f8f8;
+	background: #dfdfdf;
 }
 .container {
 	width: 100%;
@@ -44,7 +44,7 @@ body {
     padding-right: 20px;
 }
 form {
-	background-color: #f8f8f8;
+	background-color: transparent;
 }
 a {
 	color: black;
@@ -77,7 +77,7 @@ input {
 	position: relative;
 }
 img.profile_pic {
-	border-radius: 100px;
+	border-radius: 10px;
 }
 p.quote {
 	text-align: center;
