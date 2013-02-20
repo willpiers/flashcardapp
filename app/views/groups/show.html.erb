@@ -24,17 +24,23 @@
 		<h2>Students</h2>
 		<section class="group">
 		<% @group.people.shuffle.each do |person| %>
-			<div class="block">
-				<p>
-					<%= image_tag person.photo_url, width: 175, :class => 'profile_pic' %>
-				</p>
-				<p class="info">
-					<%= link_to person.name, person %><br>
-					<% if person.twitter.present? %>
-					<%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}" %>
-					<% end %>
-				</p>
+		<div class="block" ontouchstart="this.classList.toggle('hover');">
+  			<div class="flipper">
+    			<div class="front">
+					<p>
+						<%= image_tag person.photo_url, width: 175, :class => 'profile_pic' %>
+					</p>
+				</div>
+				<div class="back">
+					<p class="info">
+						<%= link_to person.name, person %><br>
+						<% if person.twitter.present? %>
+						<%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}" %>
+						<% end %>
+					</p>
+				</div>
 			</div>
+		</div>
 		<% end %>
 		</section>
 	<% end %>

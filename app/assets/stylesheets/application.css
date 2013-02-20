@@ -12,14 +12,14 @@
  *= require_tree .
  */
 
- /*Main colors of the logo #FF4C00 & #00AE68    #dfdfdf*/
+ /*Main colors of the logo #FF4C00 & #00AE68*/
 
 /*Content*/
 
 body {
-	font-family: "Ubuntu", Sans-serif;
-	color: black;
-	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    font-family: "Ubuntu", Sans-serif;
+    color: black;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -27,44 +27,47 @@ body {
     -moz-background-size: 3px 3px;
     background-size: 3px 3px;
 }
+
+/* Background gradient courtesy of Codepen Alepreto */
+
 .container {
-	width: 100%;
-	height: 100%;
-	margin: auto;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 .content {
-	width: 680px;
-	height: 100%;
-	margin: 0 auto;
+    width: 680px;
+    height: 100%;
+    margin: 0 auto;
 }
 .group_info {
-	width: 600px;
-	margin: 0 auto;
+    width: 600px;
+    margin: 0 auto;
 }
 .nav {
-	text-align: center;
-	margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .nav a {
     font-size: 25px;
     padding-right: 20px;
 }
 form {
-	background-color: transparent;
+    background-color: transparent;
 }
 a {
-	color: black;
-	text-decoration: none;
-	text-transform: none;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
 }
 a:hover {
-	text-decoration: none;
-	text-transform: none;
-	color: #ff4c00;
-	-webkit-transition: all 0.3s ease-in;
-	-moz-transition: all 0.3s ease-in;
-	-o-transition: all 0.3s ease-in;
-	transition: all 0.3s ease-in;
+    text-decoration: none;
+    text-transform: none;
+    color: #ff4c00;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 th {
     text-decoration: underline;
@@ -76,31 +79,22 @@ h4 {
     text-decoration: underline;
 }
 label {
-	position: relative;
+    position: relative;
 }
 input {
-	border-radius: 5px;
-	position: relative;
+    border-radius: 5px;
+    position: relative;
 }
 img.profile_pic {
-	border-radius: 10px;
+    border-radius: 10px;
 }
 p.quote {
-	text-align: center;
+    text-align: center;
 }
 #notice {
-	color: green;
-}
-#error_explanation {
-	color: red;
-}
-.error {
-    color: red;
-}
-.success {
     color: green;
 }
-.alert {
+#error_explanation {
     color: red;
 }
 .fadeIn img {
@@ -109,6 +103,8 @@ p.quote {
     }
 
 /*Animation*/
+
+/*Animation Logo*/
 
 .animated {
     -webkit-animation-fill-mode: both;
