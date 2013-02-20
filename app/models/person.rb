@@ -3,6 +3,7 @@ class Person < ActiveRecord::Base
 
   validates :photo_url, :format => URI::regexp(%w(http https))
   validates_presence_of :name
+  validates_uniqueness_of :twitter
 
   has_many :memberships, dependent: :destroy
   has_many :groups, through: :memberships

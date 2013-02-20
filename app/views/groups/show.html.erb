@@ -21,7 +21,7 @@
 </p>
 
 	<% if @group.people.any? %>
-		<strong>Students:</strong>
+		<h2>Students</h2>
 		<section class="group">
 		<% @group.people.shuffle.each do |person| %>
 			<div class="block">

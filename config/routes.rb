@@ -1,6 +1,10 @@
 Flashcard::Application.routes.draw do
 
-  root to: 'welcome#index', as: 'root'
+  root to: 'sessions#new', as: 'root'
+
+  get '/sessions/new' => "sessions#new", as: 'login'
+  post "/sessions" => 'sessions#create', as: 'sessions'
+  delete "/sessions" => "sessions#destroy", as: 'logout'
 
   resources :memberships, only: [:create, :destroy]
   resources :people

@@ -1,0 +1,36 @@
+<p style="line-height: 2em">
+Hello, this is FlashcardApp by two StarterLeague students.
+
+We're here to help. Flashcards are meant to be fun.
+
+So we made it simple for you to remember names and faces with simple IO.
+
+Create your classmates now, and enjoy hovering over them to remember their names
+
+Enjoy remembering the names and faces of your teachers and classmates.
+</p>
+
+
+<br>
+
+<%= form_tag sessions_url do |f| %>
+
+  <div class="field">
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, params[:name] %>
+  </div>
+  <div class="field">
+    <%= label_tag :twitter %><br />
+    <%= text_field_tag :twitter, params[:twitter] %>
+  </div>
+  <div class="field">
+    <%= label_tag :photo_url %><br />
+    <%= text_field_tag :photo_url, params[:photo_url] %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Sign In", disable_with: 'Submitting...' %>
+  </div>
+<% end %>
+
+<p class="quote">"It's hard to remember, it's difficult to forget."
+<br>-Arnold Schwarzenegger</p>

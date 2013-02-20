@@ -5,10 +5,12 @@ class MembershipsController < ApplicationController
 
     respond_to do |format|
       if @membership.save
-        format.html { redirect_to group_url(@membership.group_id), notice: 'Membership was successfully created.' }
+        flash[:success] = 'Membership was successfully created.'
+        format.html { redirect_to group_url(@membership.group_id) }
         format.json { render json: memberships_url, status: :created, location: @person }
       else
-        format.html { redirect_to groups_url, alert: "#{@membership.person.name} could not be added to #{@membership.group.name}" }
+        flash[:error] = "#{@membership.person.name} could not be added to #{@membership.group.name}"
+        format.html { redirect_to groups_url }
         format.json { render json: @membership.errors, status: :unprocessable_entity }
       end
     end
@@ -17,9 +19,9 @@ class MembershipsController < ApplicationController
   def destroy
     @membership = Membership.find(params[:id])
     @membership.destroy
-
+    flash[:success] = "#{@membership.person.name} has been removed from #{@membership.group.name}"
     respond_to do |format|
-      format.html { redirect_to person_url(@membership.person_id), notice: "#{@membership.person.name} has been removed from #{@membership.group.name}" }
+      format.html { redirect_to person_url(@membership.person_id) }
       format.json { head :no_content }
     end
   end

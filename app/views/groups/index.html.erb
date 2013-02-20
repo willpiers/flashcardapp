@@ -1,12 +1,5 @@
 <h2>Listing groups</h2>
 
-	<% if flash[:alert] %>
-		<p style="color:red;"><%= flash[:alert] %></p>
-   <% end %>
-   <% if flash[:notice] %>
-   	<p style="color:green;"><%= flash[:notice] %></p>
-   <% end %>
-
 <ul>
 <% @groups.each do |group| %>
   <li style="display: inline;">
