@@ -26,13 +26,14 @@
 		<% @group.people.shuffle.each do |person| %>
 		<div class="block" ontouchstart="this.classList.toggle('hover');">
   			<div class="flipper">
-    			<div class="front">
+    			<div class="front info">
 					<p>
 						<%= image_tag person.photo_url, width: 175, :class => 'profile_pic' %>
 					</p>
 				</div>
 				<div class="back">
 					<p class="info">
+						<%= image_tag 'Bolt.jpg', size: '20x40' %><br>
 						<%= link_to person.name, person %><br>
 						<% if person.twitter.present? %>
 						<%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}" %>
